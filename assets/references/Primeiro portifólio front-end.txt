@@ -1,0 +1,21 @@
+Primeiro portifólio front-end
+
+Site para mockups das suas imagens. -> https://smartmockups.com
+Site para paleta de cores. -> adobe colors
+
+
+Paleta modo dark:
+
+#1c0b2b
+#301c41
+#3E4880
+#4565C0
+#6F95FF
+
+Paleta modo light:
+
+#8dbee3
+#a7ceea
+#c0dff1
+#daeff8
+#f3ffff
