@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root, :root[data-theme="dark"] {
+    --primary-color: #6F95FF;
+
+    --primary-bg-color: #1C0B2B;
+    --second-bg-color: #110f24;
+
+    --border-color: #3E4880;
+    --text-color: #4565C0;
+    --footer-color: #3E4880;
+    --icon-color: #8DB3C4;
+}
+
+:root, :root[data-theme="light"] {
+    --primary-color: #64A1BD;
+
+    --primary-bg-color: #DAEEF7;
+    --second-bg-color: #8DB3C4;
+
+    --border-color: #C0DFF1;
+    --text-color: #2B6A87;
+    --footer-color: #8DB3C4;
+    --icon-color: #8DB3C4;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +32,32 @@
     list-style: none;
     text-decoration: none;
     font-family: "Archivo", serif;
+
+    transition: all .4s ease-in-out;
 }
 
 body {
-    background-color: #1C0B2B;
-    color: #6F95FF;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.25rem;
+    text-align: justify;
+    color: var(--text-color);
 }
 
 i {
-    color: #C0DFF1;
+    color: var(--icon-color);
 }
 
 /* Header */
@@ -37,12 +78,8 @@ i {
 
 .header h1 {
     font-size: 1rem;
+    font-weight: 600;
     max-width: 70px;
-}
-
-.menu__toggle {
-   display: flex;
-   justify-content: flex-end;
 }
 
 .header #toggleTheme {
@@ -51,11 +88,20 @@ i {
 
 /* Menu */
 
+.menu__toggle {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.menu__toggle {
+    cursor: pointer;
+}
+
 .menu {
     display: flex;
     align-items: center;
-    background-color: #110f24;
-    border-top: 1px solid #301C4E;
+    background-color: var(--second-bg-color);
+    border-top: 1px solid var(--border-color);
 }
 
 .menu--principal {
@@ -79,11 +125,15 @@ i {
     align-items: center;
 }
 
+.menu--social {
+    gap: 1rem;
+}
+
 .menu__link.active .menu__icon, 
 .menu__link.active .menu__text,
 .menu__link:hover .menu__icon, 
 .menu__link:hover .menu__text {
-    color: #6F95FF;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -92,7 +142,7 @@ i {
 }
 
 .menu__icon, .menu__text {
-    color: #4565C0;
+    color: var(--text-color);
     transition: color .3s ease-in-out, font-weight .3s ease-in-out;
 }
 
@@ -105,10 +155,112 @@ i {
     text-transform: uppercase;
 }
 
+.btn {
+    width: 100%;
+    background: transparent;
+    border-radius: 3.125rem;
+    padding: 0.875rem 1rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.btn span, .btn i {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.btn--primary span {
+    color: var(--primary-color);
+}
+
+.btn--primary {
+    border: 1px solid var(--primary-color);
+}
+
+/* Main */
+
+.main {
+    padding: 2.5rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main__content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__content1 ul {
+    background-color: inherit;
+    border: none;
+}
+
+/* Section habilidades */
+
+.habilidades {
+    padding: 2rem 1rem 1rem 1rem;
+    background: var(--footer-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.habilidades h2 {
+    text-transform: none;
+    font-weight: 400;
+}
+
+.habilidades__list {
+    width: 100%;
+    padding: 1rem 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+
+.footer {
+    margin: 20px;
+    padding: 0 20px;
+    color: var(--footer-color);
+}
+
+.footer p {
+    color: var(--footer-color);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer p a {
+    color: inherit;
+}
+
+.footer p a:hover {
+    color: var(--primary-color);
+}
+
 @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
     .header {
-        border-bottom: 1px solid #301C4E;
-        position: fixed;
+        border-bottom: 1px solid var(--border-color);
         padding: 1rem 4rem;
     }
 
@@ -129,14 +281,57 @@ i {
         min-width: 33%;
     }
 
+    .main {
+        padding: 4rem 6rem 4rem 6rem;
+    }
+
+    .main__content1 {
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 3rem 0rem 1rem 0rem;
+    }
+
     .menu {
         border: none;
         background-color: inherit;
     }
+
+    .habilidades h2 {
+        font-size: 2.5rem;
+        padding: 3rem 0 2rem 0;
+        text-align: center;
+    }
+
+    .habilidades__list {
+        padding-bottom: 1.5rem;
+        gap: 1rem;
+    }
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1200px) {
+    .main__content1 {
+        padding: 6rem 6rem 5rem;
+    }
+
+    .main__content1 .btn {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    h1 {
+        font-size: 6.25rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
     .header {
         padding: 1rem 15rem;
+    }
+
+    .main__content1 {
+        padding: 6rem 10rem 5rem;
     }
 }
