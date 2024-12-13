@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="header__nav">
             <ul class="menu menu--principal">
                 <li class="menu__item">
-                    <a class="menu__link active" href="#home">
+                    <a class="menu__link" href="#home">
                         <span class="menu__text">Home</span>
                     </a>
                 </li>
@@ -56,7 +58,7 @@
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#obre">
+                <a class="menu__link" href="#sobre">
                     <i class="menu__icon bi bi bi-person"></i>
                     <span class="menu__text">Sobre</span>
                 </a>
@@ -70,7 +72,7 @@
         </ul>
     </nav>
 
-    <main class="main">
+    <main id="home" class="main">
         <div class="main__content1">
             <h1><b>Responsividade com</b> Desenvolvimento Front-End</h1>
             <p>Thiago Cardoso, Betim-MG. Estudante de Sistemas de informação.</p>
@@ -105,7 +107,7 @@
             </li>
             <li class="list__li">
                 <img src="assets/images/icon-js.png" alt="Logo JavaScript">
-            </li">
+                </li">
         </ul>
     </section>
     <section id="projetos" class="projects">
@@ -196,6 +198,104 @@
             </div>
         </div>
     </section>
+    <section id="sobre" class="about">
+        <div class="about__content1">
+            <img class="about__photo" src="assets/images/thiago.jpg">
+            <div class="about__description">
+                <h2>Sobre mim</h2>
+                <p>Thiago Cardoso. Estudante de sistemas de informação da UNA Betim, buscando estágio na área de desenvolvimento front-end. Desejando sempre evoluir, todos os dias estudo para conseguir o meu sonho de ingressar nessa área na qual tanto gosto. Atualmente tenho conhecimento intermediario em HTML, CSS e JavaScript, mas estou estudando novas tecnologias como React JS.</p>
+                <div class="description__buttons">
+                    <a class="btn" href="www.linkedin.com/in/thiago--cardoso-teixeira" target="_blank">
+                        <button class="btn btn--primary">
+                            <span>Conecte-se comigo</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
+                    <a class="btn" href="">
+                        <button class="btn">
+                            <span>Currículo</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="about__content2">
+            <div class="col1">
+                <h3>Formação</h3>
+                <h4>Sistemas de informação</h4>
+                <span>Fevereiro 2024 - Dezembro 2027</span>
+                <div class="about__icons">
+                    <i class="menu__icon bi bi-bank"></i>
+                    <span>Universidade UNA - Betim</span>
+                </div>
+                <div class="about__icons">
+                    <i class="menu__icon bi bi-mortarboard"></i>
+                    <span>Ensino Médio Completo</span>
+                </div>
+            </div>
+            <div class="col2">
+                <h3>Cursos</h3>
+                <div id="accordion" class="accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span>HTML CSS do básico ao avançado</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>Curso em vídeo. Junho 2024. 160h.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span>Ri Happy Front-End do zero</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>DIO. Dezembro 2024. 75h.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span>JavaScript base</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>Curso em vídeo. Junho 2024. 40h.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="contact">
+        <h2>Contate-me</h2>
+        <p>Estou disponivel para serviços e novas conexões. Contate-me via e-mail e nas minhas redes sociais</p>
+        <ul class="menu menu--social">
+            <li>
+                <a class="menu__link" href="http://github.com/thiagocardoso1" target="_blank">
+                    <i class="menu__icon bi bi-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__link" href="www.linkedin.com/in/thiago--cardoso-teixeira" target="_blank">
+                    <i class="menu__icon bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__link" href="https://www.instagram.com/thiagocardoso_o/" target="_blank">
+                    <i class="menu__icon bi bi-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
+        <a href="mailto:thiagocardoso2045@gmail.com">
+            <button class="btn btn--primary">
+              <span class="email">thiagocardoso2045@gmail.com</span>
+            </button>  
+          </a>
+    </section>
 
     <footer class="footer">
         <p>© 2024. Todos os Direitos Reservados. Thiago Cardoso. Desenvolvido por <a href="http://github.com/thiagocardoso1">TH</a></p>
@@ -203,4 +303,5 @@
 
     <script src="assets/scripts/script.js"></script>
 </body>
+
 </html>
