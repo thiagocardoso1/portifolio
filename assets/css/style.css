@@ -47,6 +47,17 @@ body {
     color: var(--primary-color);
 }
 
+.body__content {
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     font-size: 1.7rem;
     font-weight: 200;
@@ -123,6 +134,7 @@ i {
     width: 100vw;
     position: fixed;
     bottom: 0;
+    left: 0;
     align-items: center;
     justify-content: space-between;
 }
@@ -233,6 +245,7 @@ i {
 /* Section habilidades */
 
 .habilidades {
+    width: 100%;
     padding: 2rem 1rem 1rem 1rem;
     background: var(--footer-color);
 
@@ -286,6 +299,7 @@ i {
 
 .projects__card img {
     width: 100%;
+    max-height: 400px;
     border-radius: 0.5rem;
     object-fit: cover;
     object-position: center;

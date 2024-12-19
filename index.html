@@ -13,293 +13,293 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="menu menu--principal">
+    <div class="body__content">
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="menu menu--principal">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#home">
+                            <span class="menu__text">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#projetos">
+                            <span class="menu__text">Projetos</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#sobre">
+                            <span class="menu__text">Sobre</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contato">
+                            <span class="menu__text">Contato</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Thiago Cardoso</h1>
+            <div class="menu__toggle">
+                <i id="toggleTheme" class="bi bi-sun"></i>
+            </div>
+        </header>
+        <nav class="nav--mobile">
+            <ul class="menu menu--mobile">
                 <li class="menu__item">
                     <a class="menu__link" href="#home">
+                        <i class="menu__icon bi bi-house-door"></i>
                         <span class="menu__text">Home</span>
                     </a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#projetos">
+                        <i class="menu__icon bi bi-window-stack"></i>
                         <span class="menu__text">Projetos</span>
                     </a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#sobre">
+                        <i class="menu__icon bi bi bi-person"></i>
                         <span class="menu__text">Sobre</span>
                     </a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link" href="#contato">
+                        <i class="menu__icon bi bi-envelope"></i>
                         <span class="menu__text">Contato</span>
                     </a>
                 </li>
             </ul>
         </nav>
-        <h1>Thiago Cardoso</h1>
-        <div class="menu__toggle">
-            <i id="toggleTheme" class="bi bi-sun"></i>
-        </div>
-    </header>
-    <nav class="nav--mobile">
-        <ul class="menu menu--mobile">
-            <li class="menu__item">
-                <a class="menu__link" href="#home">
-                    <i class="menu__icon bi bi-house-door"></i>
-                    <span class="menu__text">Home</span>
+        <main id="home" class="main">
+            <div class="main__content1">
+                <h1><b>Responsividade com</b> Desenvolvimento Front-End</h1>
+                <p>Thiago Cardoso, Betim-MG. Estudante de Sistemas de informação.</p>
+                <ul class="menu menu--social">
+                    <li>
+                        <a class="menu__link" href="http://github.com/thiagocardoso1" target="_blank">
+                            <i class="menu__icon bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="www.linkedin.com/in/thiago--cardoso-teixeira" target="_blank">
+                            <i class="menu__icon bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#projetos">
+                    <button class="btn btn--primary">
+                        <span>Ver projetos</span>
+                        <i class="bi bi-arrow-down-right"></i>
+                    </button>
                 </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                    <i class="menu__icon bi bi-window-stack"></i>
-                    <span class="menu__text">Projetos</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                    <i class="menu__icon bi bi bi-person"></i>
-                    <span class="menu__text">Sobre</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#contato">
-                    <i class="menu__icon bi bi-envelope"></i>
-                    <span class="menu__text">Contato</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <main id="home" class="main">
-        <div class="main__content1">
-            <h1><b>Responsividade com</b> Desenvolvimento Front-End</h1>
-            <p>Thiago Cardoso, Betim-MG. Estudante de Sistemas de informação.</p>
+            </div>
+        </main>
+        <section class="habilidades">
+            <h2>Conhecimento nas principais tecnologias do mercado.</h2>
+            <ul class="habilidades__list">
+                <li class="list__li">
+                    <img src="assets/images/icon-html.png" alt="Logo HTML5">
+                </li>
+                <li class="list__li">
+                    <img src="assets/images/icon-css.png" alt="Logo CSS3">
+                </li>
+                <li class="list__li">
+                    <img src="assets/images/icon-js.png" alt="Logo JavaScript">
+                    </li">
+            </ul>
+        </section>
+        <section id="projetos" class="projects">
+            <h2>Projetos</h2>
+            <div class="projects__container">
+                <div class="projects__card">
+                    <img src="assets/images/pekedex-img.png" alt="Imagem da pokedex">
+                    <div class="card__body">
+                        <h3 class="card__title">Pokedex</h3>
+                        <p class="card__description">Pokedex com integração em API</p>
+                        <ul class="card__list">
+                            <li>Integração com API;</li>
+                            <li>Verificação de sub-status base;</li>
+                            <li>Limitador de pokemons</li>
+                        </ul>
+                        <div class="card__button">
+                            <a class="btn" href="https://thiagocardoso1.github.io/pokedex/" target="_blank">
+                                <button class="btn btn--primary">
+                                    <span>Prévia</span>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </button>
+                            </a>
+                            <a class="btn" href="https://github.com/thiagocardoso1/pokedex.git" target="_blank">
+                                <button class="btn">
+                                    <span>Repositório</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__card projects__card--reverse">
+                    <img src="assets/images/multiversus.png" alt="Imagem da tela inicial multiversus">
+                    <div class="card__body">
+                        <h3 class="card__title">Multiversus Spider-Man</h3>
+                        <p class="card__description">Todos os filmes e atores do Spider-man</p>
+                        <ul class="card__list">
+                            <li>Animações css;</li>
+                            <li>Projeto componentizado;</li>
+                            <li>Responsividade.</li>
+                        </ul>
+                        <div class="card__button">
+                            <a class="btn" href="https://thiagocardoso1.github.io/projeto-multiversus/" target="_blank">
+                                <button class="btn btn--primary">
+                                    <span>Prévia</span>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </button>
+                            </a>
+                            <a class="btn" href="https://github.com/thiagocardoso1/projeto-multiversus.git" target="_blank">
+                                <button class="btn">
+                                    <span>Repositório</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__card">
+                    <img src="assets/images/yugioh.png" alt="Imagem do site de yugioh">
+                    <div class="card__body">
+                        <h3 class="card__title">Yu-Gi-Oh game</h3>
+                        <p class="card__description">Jogo de jokenpô baseado em Yu-Gi-Oh.</p>
+                        <ul class="card__list">
+                            <li>Imersividade com cores, música, estilo;</li>
+                            <li>Verificação status da carta;</li>
+                            <li>Contador de vitórias, derrotas e empates</li>
+                        </ul>
+                        <div class="card__button">
+                            <a class="btn" href="https://thiagocardoso1.github.io/Yugioh-game/" target="_blank">
+                                <button class="btn btn--primary">
+                                    <span>Prévia</span>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </button>
+                            </a>
+                            <a class="btn" href="https://github.com/thiagocardoso1/Yugioh-game.git" target="_blank">
+                                <button class="btn">
+                                    <span>Repositório</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__button">
+                    <a href="http://github.com/thiagocardoso1" target="_blank">
+                        <button class="btn btn--primary">
+                            <span>Ver todos os projetos</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="about">
+            <div class="about__content1">
+                <img class="about__photo" src="assets/images/thiago.jpg">
+                <div class="about__description">
+                    <h2>Sobre mim</h2>
+                    <p>Thiago Cardoso. Estudante de sistemas de informação da UNA Betim, buscando estágio na área de desenvolvimento front-end. Desejando sempre evoluir, todos os dias estudo para conseguir o meu sonho de ingressar nessa área na qual tanto gosto. Atualmente tenho conhecimento intermediario em HTML, CSS e JavaScript, mas estou estudando novas tecnologias como React JS.</p>
+                    <div class="description__buttons">
+                        <a class="btn" href="www.linkedin.com/in/thiago--cardoso-teixeira" target="_blank">
+                            <button class="btn btn--primary">
+                                <span>Conecte-se comigo</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </button>
+                        </a>
+                        <a class="btn" href="assets/references/Currículo_ThiagoCardoso.docx" download="Currículo_ThiagoCardoso.docx">
+                            <button class="btn">
+                                <span>Currículo</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="about__content2">
+                <div class="col1">
+                    <h3>Formação</h3>
+                    <h4>Sistemas de informação</h4>
+                    <span>Fevereiro 2024 - Dezembro 2027</span>
+                    <div class="about__icons">
+                        <i class="menu__icon bi bi-bank"></i>
+                        <span>Universidade UNA - Betim</span>
+                    </div>
+                    <div class="about__icons">
+                        <i class="menu__icon bi bi-mortarboard"></i>
+                        <span>Ensino Médio Completo</span>
+                    </div>
+                </div>
+                <div class="col2">
+                    <h3>Cursos</h3>
+                    <div id="accordion" class="accordion">
+                        <div class="accordion__item">
+                            <button class="accordion__header">
+                                <span>HTML CSS do básico ao avançado</span>
+                                <i class="bi bi-caret-down-fill"></i>
+                            </button>
+                            <div class="accordion__body">
+                                <p>Curso em vídeo. Junho 2024. 160h.</p>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <button class="accordion__header">
+                                <span>Ri Happy Front-End do zero</span>
+                                <i class="bi bi-caret-down-fill"></i>
+                            </button>
+                            <div class="accordion__body">
+                                <p>DIO. Dezembro 2024. 75h.</p>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <button class="accordion__header">
+                                <span>JavaScript base</span>
+                                <i class="bi bi-caret-down-fill"></i>
+                            </button>
+                            <div class="accordion__body">
+                                <p>Curso em vídeo. Junho 2024. 40h.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="contact">
+            <h2>Contate-me</h2>
+            <p>Estou disponivel para serviços e novas conexões. Contate-me via e-mail e nas minhas redes sociais</p>
             <ul class="menu menu--social">
                 <li>
                     <a class="menu__link" href="http://github.com/thiagocardoso1" target="_blank">
                         <i class="menu__icon bi bi-github"></i>
+                        <span>GitHub</span>
                     </a>
                 </li>
                 <li>
-                    <a class="menu__link" href="www.linkedin.com/in/thiago--cardoso-teixeira" target="_blank">
+                    <a class="menu__link" href="https://www.linkedin.com/in/thiago--cardoso-teixeira" target="_blank">
                         <i class="menu__icon bi bi-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu__link" href="https://www.instagram.com/thiagocardoso_o/" target="_blank">
+                        <i class="menu__icon bi bi-instagram"></i>
+                        <span>Instagram</span>
                     </a>
                 </li>
             </ul>
-            <a href="#projetos">
+            <a href="mailto:thiagocardoso2045@gmail.com">
                 <button class="btn btn--primary">
-                    <span>Ver projetos</span>
-                    <i class="bi bi-arrow-down-right"></i>
+                  <span class="email">thiagocardoso2045@gmail.com</span>
                 </button>
-            </a>
-        </div>
-    </main>
-    <section class="habilidades">
-        <h2>Conhecimento nas principais tecnologias do mercado.</h2>
-        <ul class="habilidades__list">
-            <li class="list__li">
-                <img src="assets/images/icon-html.png" alt="Logo HTML5">
-            </li>
-            <li class="list__li">
-                <img src="assets/images/icon-css.png" alt="Logo CSS3">
-            </li>
-            <li class="list__li">
-                <img src="assets/images/icon-js.png" alt="Logo JavaScript">
-                </li">
-        </ul>
-    </section>
-    <section id="projetos" class="projects">
-        <h2>Projetos</h2>
-        <div class="projects__container">
-            <div class="projects__card">
-                <img src="assets/images/pekedex-img.png" alt="Imagem da pokedex">
-                <div class="card__body">
-                    <h3 class="card__title">Pokedex</h3>
-                    <p class="card__description">Pokedex com integração em API</p>
-                    <ul class="card__list">
-                        <li>Integração com API;</li>
-                        <li>Verificação de sub-status base;</li>
-                        <li>Limitador de pokemons</li>
-                    </ul>
-                    <div class="card__button">
-                        <a class="btn" href="https://thiagocardoso1.github.io/pokedex/" target="_blank">
-                            <button class="btn btn--primary">
-                                <span>Prévia</span>
-                                <i class="bi bi-arrow-up-right"></i>
-                            </button>
-                        </a>
-                        <a class="btn" href="https://github.com/thiagocardoso1/pokedex.git" target="_blank">
-                            <button class="btn">
-                                <span>Repositório</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__card projects__card--reverse">
-                <img src="assets/images/multiversus.png" alt="Imagem da tela inicial multiversus">
-                <div class="card__body">
-                    <h3 class="card__title">Multiversus Spider-Man</h3>
-                    <p class="card__description">Todos os filmes e atores do Spider-man</p>
-                    <ul class="card__list">
-                        <li>Animações css;</li>
-                        <li>Projeto componentizado;</li>
-                        <li>Responsividade.</li>
-                    </ul>
-                    <div class="card__button">
-                        <a class="btn" href="https://thiagocardoso1.github.io/projeto-multiversus/" target="_blank">
-                            <button class="btn btn--primary">
-                                <span>Prévia</span>
-                                <i class="bi bi-arrow-up-right"></i>
-                            </button>
-                        </a>
-                        <a class="btn" href="https://github.com/thiagocardoso1/projeto-multiversus.git" target="_blank">
-                            <button class="btn">
-                                <span>Repositório</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__card">
-                <img src="assets/images/yugioh.png" alt="Imagem do site de yugioh">
-                <div class="card__body">
-                    <h3 class="card__title">Yu-Gi-Oh game</h3>
-                    <p class="card__description">Jogo de jokenpô baseado em Yu-Gi-Oh.</p>
-                    <ul class="card__list">
-                        <li>Imersividade com cores, música, estilo;</li>
-                        <li>Verificação status da carta;</li>
-                        <li>Contador de vitórias, derrotas e empates</li>
-                    </ul>
-                    <div class="card__button">
-                        <a class="btn" href="https://thiagocardoso1.github.io/Yugioh-game/" target="_blank">
-                            <button class="btn btn--primary">
-                                <span>Prévia</span>
-                                <i class="bi bi-arrow-up-right"></i>
-                            </button>
-                        </a>
-                        <a class="btn" href="https://github.com/thiagocardoso1/Yugioh-game.git" target="_blank">
-                            <button class="btn">
-                                <span>Repositório</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="projects__button">
-                <a href="http://github.com/thiagocardoso1" target="_blank">
-                    <button class="btn btn--primary">
-                        <span>Ver todos os projetos</span>
-                        <i class="bi bi-arrow-up-right"></i>
-                    </button>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section id="sobre" class="about">
-        <div class="about__content1">
-            <img class="about__photo" src="assets/images/thiago.jpg">
-            <div class="about__description">
-                <h2>Sobre mim</h2>
-                <p>Thiago Cardoso. Estudante de sistemas de informação da UNA Betim, buscando estágio na área de desenvolvimento front-end. Desejando sempre evoluir, todos os dias estudo para conseguir o meu sonho de ingressar nessa área na qual tanto gosto. Atualmente tenho conhecimento intermediario em HTML, CSS e JavaScript, mas estou estudando novas tecnologias como React JS.</p>
-                <div class="description__buttons">
-                    <a class="btn" href="www.linkedin.com/in/thiago--cardoso-teixeira" target="_blank">
-                        <button class="btn btn--primary">
-                            <span>Conecte-se comigo</span>
-                            <i class="bi bi-arrow-up-right"></i>
-                        </button>
-                    </a>
-                    <a class="btn" href="assets/references/Currículo_ThiagoCardoso.docx" download="Currículo_ThiagoCardoso.docx">
-                        <button class="btn">
-                            <span>Currículo</span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="about__content2">
-            <div class="col1">
-                <h3>Formação</h3>
-                <h4>Sistemas de informação</h4>
-                <span>Fevereiro 2024 - Dezembro 2027</span>
-                <div class="about__icons">
-                    <i class="menu__icon bi bi-bank"></i>
-                    <span>Universidade UNA - Betim</span>
-                </div>
-                <div class="about__icons">
-                    <i class="menu__icon bi bi-mortarboard"></i>
-                    <span>Ensino Médio Completo</span>
-                </div>
-            </div>
-            <div class="col2">
-                <h3>Cursos</h3>
-                <div id="accordion" class="accordion">
-                    <div class="accordion__item">
-                        <button class="accordion__header">
-                            <span>HTML CSS do básico ao avançado</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion__body">
-                            <p>Curso em vídeo. Junho 2024. 160h.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item">
-                        <button class="accordion__header">
-                            <span>Ri Happy Front-End do zero</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion__body">
-                            <p>DIO. Dezembro 2024. 75h.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item">
-                        <button class="accordion__header">
-                            <span>JavaScript base</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion__body">
-                            <p>Curso em vídeo. Junho 2024. 40h.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contato" class="contact">
-        <h2>Contate-me</h2>
-        <p>Estou disponivel para serviços e novas conexões. Contate-me via e-mail e nas minhas redes sociais</p>
-        <ul class="menu menu--social">
-            <li>
-                <a class="menu__link" href="http://github.com/thiagocardoso1" target="_blank">
-                    <i class="menu__icon bi bi-github"></i>
-                    <span>GitHub</span>
-                </a>
-            </li>
-            <li>
-                <a class="menu__link" href="https://www.linkedin.com/in/thiago--cardoso-teixeira" target="_blank">
-                    <i class="menu__icon bi bi-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-            </li>
-            <li>
-                <a class="menu__link" href="https://www.instagram.com/thiagocardoso_o/" target="_blank">
-                    <i class="menu__icon bi bi-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-            </li>
-        </ul>
-        <a href="mailto:thiagocardoso2045@gmail.com">
-            <button class="btn btn--primary">
-              <span class="email">thiagocardoso2045@gmail.com</span>
-            </button>  
-          </a>
-    </section>
-
-    <footer class="footer">
-        <p>© 2024. Todos os Direitos Reservados. Thiago Cardoso. Desenvolvido por <a href="http://github.com/thiagocardoso1">TH</a></p>
-    </footer>
+              </a>
+        </section>
+        <footer class="footer">
+            <p>© 2024. Todos os Direitos Reservados. Thiago Cardoso. Desenvolvido por <a href="http://github.com/thiagocardoso1">TH</a></p>
+        </footer>
+    </div>
 
     <script src="assets/scripts/script.js"></script>
 </body>
